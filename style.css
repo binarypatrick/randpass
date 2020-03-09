@@ -1,0 +1,58 @@
+body {
+  font-family: monospace;
+  margin: 0 0 20px;
+  padding: 0;
+  cursor: default;
+}
+
+h1 {
+  padding: 1ch 2ch;
+  margin: 0;
+  display: inline-block;
+}
+
+.input-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 670px;
+}
+
+.input {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+
+input {
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+
+.input-container,
+.password-container {
+  padding: 0 4ch;
+}
+
+.password-container {
+  display: inline-block;
+  max-width: 100%;
+  padding: 0 4ch;
+  box-sizing: border-box;
+  height: 58ch;
+}
+
+.password {
+  margin: 8px 0;
+  width: 100%;
+  max-width: 128ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: all;
+}
+
+#thumbprint {
+  margin: 4ch;
+}

@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <title>
+      RandPass
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Rand Pass</h1>
+    <div class="input-container">
+      <div class="input">
+        <input id="upper" type="checkbox" onclick="isUpper = !isUpper; toggle(isUpper, 'upper')" />Uppercase
+      </div>
+      <div class="input">
+        <input id="lower" type="checkbox" onclick="isLower = !isLower; toggle(isLower, 'lower')" />Lowercase
+      </div>
+      <div class="input">
+        <input id="numeric" type="checkbox" onclick="isNumeric = !isNumeric; toggle(isNumeric, 'numeric')" />Numbers
+      </div>
+      <div class="input">
+        <input id="symbols" type="checkbox" onclick="isSymbols = !isSymbols; toggle(isSymbols, 'symbols')" />Symbols
+      </div>
+      <div class="input">
+        <input
+          id="ambiguous"
+          type="checkbox"
+          onclick="isAvoidAmbiguous = !isAvoidAmbiguous; toggle(isAvoidAmbiguous, 'ambiguous')"
+        />Avoid Ambiguous
+      </div>
+    </div>
+    <div id="container"></div>
+    <div id="thumbprint"></div>
+
+    <script src="functions.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
