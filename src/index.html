@@ -1,12 +1,13 @@
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="favicon.ico" />
     <title>
       RandPass
     </title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>Rand Pass</h1>
+    <h1>Random Passwords</h1>
     <div class="input-container">
       <div class="input">
         <input id="upper" type="checkbox" onclick="isUpper = !isUpper; toggle(isUpper, 'upper')" />Uppercase
@@ -29,6 +30,11 @@
       </div>
     </div>
     <div id="container"></div>
+    <p class="info">
+      I run entirely in your browser. If you want to see for yourself, right click me and view my source! You should be
+      very careful about passwords. Always ensure they don't travel
+      <a href="https://en.wikipedia.org/wiki/Plaintext">plaintext</a> over the internet, lest someone may see your source too.
+    </p>
     <div id="thumbprint"></div>
 
     <script src="functions.js"></script>
