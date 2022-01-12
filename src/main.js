@@ -6,8 +6,8 @@ let isSymbols = initializeCheckbox('symbols', true);
 let isAvoidAmbiguous = initializeCheckbox('ambiguous', false);
 refreshPasswords();
 
-setTimeout(() => {
-  const thumbprint = document.getElementById('thumbprint');
-  const canvas = createStaticCanvas(256);
+const thumbprint = document.getElementById('thumbprint');
+if (!!thumbprint) {
+  const canvas = createStaticCanvas(128);
   thumbprint.appendChild(canvas);
-});
+}

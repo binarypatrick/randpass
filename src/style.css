@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-  padding: 1ch 2ch;
+  padding: 18px;
   margin: 0;
   display: inline-block;
 }
@@ -15,13 +15,12 @@ h1 {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-width: 670px;
 }
 
 .input {
   display: inline-block;
   white-space: nowrap;
-  padding: 0 20px;
+  padding: 0 17px;
 }
 
 input {
@@ -30,29 +29,38 @@ input {
   vertical-align: middle;
 }
 
+#container {
+  min-height: 830px;
+}
+
 .input-container,
 .password-container {
-  padding: 0 4ch;
+  padding: 0 19.1px;
 }
 
 .password-container {
   display: inline-block;
   max-width: 100%;
-  padding: 0 4ch;
   box-sizing: border-box;
-  height: 58ch;
 }
 
 .password {
   margin: 8px 0;
   width: 100%;
-  max-width: 128ch;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   user-select: all;
 }
 
+.info {
+  margin: 5px 20px;
+  font-size: 16px;
+  font-family: Segoe UI;
+  max-width: 80ch;
+}
+
 #thumbprint {
-  margin: 4ch;
+  margin: 20px;
+  height: 128px;
 }
